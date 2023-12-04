@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+    body {
+        height: 100vh;
+        display: flex;
+        color: white;
+        background: black;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        font-size: 4vmin;
+        color: darkslateblue;
+        letter-spacing: 1vmin;
+    }
+
+    h1 {
+        color: grey;
+        font-size: 5vmin;
+    }
+
+    .game {
+        width: 640px;
+        height: 640px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        /* produce the 3D card flip effect */
+        perspective: 1000px;
+    }
+
+    .game-cards {
+        width: calc(25% - 10px);
+        height: calc(33.333% - 10px);
+        margin: 5px;
+        position: relative;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+        transform: scale(1);
+        transform-style: preserve-3d;
+        transition: transform .5s;
+    }
+
+    .front-face,
+    .back-face {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        backface-visibility: hidden;
+    }
+
+    .game-cards img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .game-cards.flip {
+        transform: rotateY(180deg);
+    }
+
+    /* css to show the card has been clicked */
+    .game-cards:active {
+        transform: scale(0.97);
+        transition: transform .2s;
+    }
+
+    .game-cards:hover {
+        cursor: pointer;
+    }
+
+    .front-face {
+        transform: rotateY(180deg);
+    }
+
+    .card-game {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .timer, .flips {
+        padding: 10px; 
+        
+      }

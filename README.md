@@ -41,7 +41,9 @@ Image 1
 
 _Credits_
 
-Images: [DuckDuckGo Search](https://duckduckgo.com/)
+Images: 
+
+[Sharif Muhammad](https://www.sharifmuhammad.com/) |[Mary Mark](https://www.marysmark.com/by-land/Brooklyn-bridge) 
 
 Markdown Guide: [ia.net](https://ia.net/)
 

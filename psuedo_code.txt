@@ -36,3 +36,9 @@
     - Handle card clicks
     - Restart button clicks
 
+- work on randomizing 
+- keeping score (how many cards were flipped)
+- game over (winner's notice )
+
+- high score - local storage
+- 
