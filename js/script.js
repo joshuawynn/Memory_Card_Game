@@ -9,6 +9,7 @@ let secondCard;
 let flips = 0;
 let timer; // New variable for the timer
 let elapsedSeconds = 0;
+let gameStart = false;
 
 /*----- cached elements  -----*/
 
@@ -28,9 +29,9 @@ function updateTimerDisplay() {
 
 // Start the timer
 function startTimer() {
+    console.log(elapsedSeconds)
     timer = setInterval(() => {
         elapsedSeconds++;
-        console.log(elapsedSeconds)
         updateTimerDisplay();
     }, 1000);
 
@@ -47,7 +48,10 @@ function flipCard() {
     if (lockBoard) return;
     if (this === firstCard)
         return;
-
+    if(!gameStart){
+        startTimer()
+        gameStart = true;
+    }
     this.classList.add('flip');
 
     if (!hasFlippedCard) {
@@ -56,7 +60,7 @@ function flipCard() {
         firstCard = this;
         flips++; // Increment flips counter
         updateFlipsDisplay(); //Update the display of flips
-        startTimer();
+        // startTimer();
         return;
     }
     //second click
@@ -132,6 +136,13 @@ function playFlipSound() {
     flipSound.play();
 }
 
+// Function to play the crowd cheering when the game is won
+function playWinningSound() {
+    const winSound = document.getElementById('winSound');
+    winSound.play();
+}
+
+
 //Array.from method turns a node list into an array to check if all the cards are flipped.
 function checkAllMatched() {
     const allMatched = Array.from(cards).every(card => card.classList.contains('flip'));
@@ -139,8 +150,10 @@ function checkAllMatched() {
     if (allMatched) {
         setTimeout(() => {
             stopTimer();
+            gameStart = false;
             document.getElementById('winner-message').textContent = 'Congratulations! You have matched all the cards and won!';
         }, 1500)
+        playWinningSound();
     }
 
 }
