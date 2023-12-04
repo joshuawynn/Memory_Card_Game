@@ -142,6 +142,10 @@ function playWinningSound() {
     winSound.play();
 }
 
+// Function to show the winning message
+function displayWinnerMessage() {
+    document.getElementById('winner-message').textContent = 'Congratulations! You have matched all the cards and won!';
+}
 
 //Array.from method turns a node list into an array to check if all the cards are flipped.
 function checkAllMatched() {
@@ -151,7 +155,7 @@ function checkAllMatched() {
         setTimeout(() => {
             stopTimer();
             gameStart = false;
-            document.getElementById('winner-message').textContent = 'Congratulations! You have matched all the cards and won!';
+            displayWinnerMessage();
         }, 1500)
         playWinningSound();
     }
