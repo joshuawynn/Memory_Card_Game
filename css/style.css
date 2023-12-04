@@ -25,7 +25,7 @@
     }
 
     h1 {
-        color: grey;
+        color: white;
         font-size: 4vmin;
     }
 
@@ -95,11 +95,15 @@
         display: flex;
         justify-content: space-between;
         width: 50%;
+        font-size: 5vmin;
+        font-style: bold;
+        color: white;
+        letter-spacing: 1vmin;
       }
       
       .timer, .flips {
         padding: 20px; 
-        
+
       }
 
 /* CSS */
