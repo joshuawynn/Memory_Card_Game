@@ -15,7 +15,7 @@ let elapsedSeconds = 0;
 
 /*----- event listeners -----*/
 cards.forEach(card => card.addEventListener('click', flipCard));
-
+cards.forEach(card => card.addEventListener('click', playFlipSound));
 /*----- functions -----*/
 
 // Update the timer display
@@ -45,8 +45,8 @@ function stopTimer() {
 //function to flip two cards
 function flipCard() {
     if (lockBoard) return;
-    if (this === firstCard) 
-    return;
+    if (this === firstCard)
+        return;
 
     this.classList.add('flip');
 
@@ -121,7 +121,16 @@ function updateFlipsDisplay() {
 })(); //immediately invoked function expression
 
 
+function restartGame() {
+    // Reload the page to restart the game
+    location.reload();
+}
 
+// Function to play the card flip sound
+function playFlipSound() {
+    const flipSound = document.getElementById('flipSound');
+    flipSound.play();
+}
 
 //Array.from method turns a node list into an array to check if all the cards are flipped.
 function checkAllMatched() {
