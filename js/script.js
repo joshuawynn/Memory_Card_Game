@@ -130,7 +130,7 @@ function checkAllMatched() {
     if (allMatched) {
         setTimeout(() => {
             stopTimer();
-            alert('Congratulations! You have matched all the cards and won!');
+            document.getElementById('winner-message').textContent = 'Congratulations! You have matched all the cards and won!';
         }, 1500)
     }
 
