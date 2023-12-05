@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JW's Memory Game - Start Page</title>
-    <link rel="stylesheet" href="/css/index.css">
-    <script defer src="js/script.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JW's Memory Game - Start Page</title>
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/background.css">
+        <script defer src="js/script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">   
+    </head>
 <body>
+
+  <div class="overlay">
+    
+  </div>
+
     <h1>Welcome to the Memory Card Game!</h1>
-     <a href="game.html">
+     
+      <!-- Player result form -->
+    
+      <section id="result-form" style="display: none;">
+        <label for="playerName">Enter Your Name:</label>
+        <input type="text" id="playerName" placeholder="Your Name">
+        <button onclick="submitResult()">Submit Result</button>
+      </section>
+
+    
+    <a href="game.html">
         <div class="section">
             <button class="btn btn--ghost">Play Game</button>
-          </div>
+        </div>
      </a>
 </body>
 </html>

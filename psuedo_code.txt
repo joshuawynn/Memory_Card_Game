@@ -42,3 +42,6 @@
 
 - high score - local storage
 - 
+
+
+-- put an overlay on the h1
