@@ -1,0 +1,47 @@
+1. Start Game Page:
+   - HTML page - startgame.HTML
+   - Header with the title of the game
+   - Images of the cards that will be used for the game
+   - Start button that initiates the game play by linking to the game.html page. 
+
+2. Game Page:
+- Create a game board html structure with card elements.
+- Use div sections to create the cards.
+- Create a button to restart the game.
+
+3. CSS styling:
+- Add images to the front and back of cards
+- Add css transitions for the card flipping animations.
+
+4. Javascript:
+ - Initialize variables
+    -`flippedCards`: An array to store flipped cards.
+    -`matchedCards`: An array to store matched pairs.
+    -`isFlipped`: Boolean to check if a card is currently flipped.
+    -`lockBoard`: Boolean to prevent flipping cards during certain actions.
+-Card click event listener for each card element on the board 
+    - On click, check if the card is already flipped or matched. If yes, do nothing.
+    - If not flip the card and add it to the flippedCards array
+    - Add sound when the cards are flipped
+- Check for match
+    - Compare card data if flippedCards array length is 2. 
+    - If the cards match, add them to the matchCards array and reset flippedCards
+    - If cards don’t match, flip them back after a short delay.
+- Game over check
+    - When all cards are match, display a victory message. 
+    - Allow the option to restart the game. 
+- Restart button:
+    - On click, reset all game variables and reshuffle the cards.
+- Event handling:
+    - Handle card clicks
+    - Restart button clicks
+
+- work on randomizing 
+- keeping score (how many cards were flipped)
+- game over (winner's notice )
+
+- high score - local storage
+- 
+
+
+-- put an overlay on the h1
