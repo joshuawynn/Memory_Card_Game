@@ -27,10 +27,9 @@ Welcome Page
 
 Game Page
 
-![Screenshot 2023-12-06 at 9 11 12 AM](https://github.com/joshuawynn/Memory_Card_Game/assets/8561747/71e3b50c-0e2c-4013-a5df-4e1ee59d4e1b)
+![Screenshot 2023-12-06 at 9 20 07 AM](https://github.com/joshuawynn/Memory_Card_Game/assets/8561747/5dd82c87-eb3b-4d64-bcd7-3517cd79de16)
 
-
-
+ 
  ***
 
  Future Updates
