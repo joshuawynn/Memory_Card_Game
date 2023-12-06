@@ -20,6 +20,13 @@ let gameStart = false;
 cards.forEach(card => card.addEventListener('click', flipCard));
 //event listener to play a flip sound once clicked
 cards.forEach(card => card.addEventListener('click', playFlipSound));
+
+document.addEventListener('DOMContentLoaded', function () {
+    const audio = document.getElementById('backgroundSound');
+    audio.volume = 0.3; // Set the volume to 50%
+    audio.play();
+});
+
 /*----- functions -----*/
 
 // Update the timer display, using the ID "timer", if timerDisplay is truthy (exist on  the page) execute the code block. 
