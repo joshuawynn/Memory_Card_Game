@@ -17,6 +17,8 @@
         background-size: cover;
     }
 
+
+/* Worked on this with Santiago to make the text more vivid admist the background image. */
     .overlay{
       width: 100vw;
       height: 100vh;
@@ -49,6 +51,8 @@
         perspective: 1000px;
     }
 
+
+    /* w3schools flip card */
     .game-cards {
         width: calc(25% - 10px);
         height: calc(33.333% - 10px);
@@ -116,7 +120,7 @@
 
       }
 
-/* CSS */
+/* CSS - https://freefrontend.com/css-ghost-buttons/ */
 .button-85 {
   padding: 0.6em 2em;
   border: none;
