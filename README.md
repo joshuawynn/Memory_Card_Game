@@ -22,7 +22,7 @@ Technologies
 
 Game URL
 
-(https://waggish-snakes.surge.sh/)
+[Play Game](https://waggish-snakes.surge.sh/)
 
 _Screenshots_
 

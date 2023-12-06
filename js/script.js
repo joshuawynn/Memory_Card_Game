@@ -1,6 +1,5 @@
 /*----- constants -----*/
-//declares a variable to to store all the elements within the class "game-cards"
-const cards = document.querySelectorAll('.game-cards'); 
+
 
 /*----- state variables -----*/
 let hasFlippedCard = false;
@@ -13,7 +12,8 @@ let elapsedSeconds = 0;
 let gameStart = false;
 
 /*----- cached elements  -----*/
-
+//declares a variable to to store all the elements within the class "game-cards"
+const cards = document.querySelectorAll('.game-cards'); 
 
 /*----- event listeners -----*/
 //event listener to flip a card once clicked
