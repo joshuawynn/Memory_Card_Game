@@ -20,13 +20,17 @@ Technologies
 
 _Screenshots_
 
-Image 1
+Welcome Page
 
- ![Welcome Page](https://ibb.co/qrpx4h4)
+![Screenshot 2023-12-05 at 11 26 23 AM](https://github.com/joshuawynn/Memory_Card_Game/assets/8561747/5c1700af-512c-4a76-89e4-8e5eaafa7ba8)
 
- Image 2
 
- ![Game Page](https://imgur.com/a/gW9PdSG)
+Game Page
+
+![Screenshot 2023-12-06 at 9 11 12 AM](https://github.com/joshuawynn/Memory_Card_Game/assets/8561747/71e3b50c-0e2c-4013-a5df-4e1ee59d4e1b)
+
+
+
  ***
 
  Future Updates
