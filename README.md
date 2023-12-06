@@ -9,6 +9,8 @@ Memory Card Game for Project 1 at General Assembly SEI-2023
 ***
 #### Description
 Created a Memory Card with 6 sets of matching images. 
+
+Instructions: Match 6 sets of cards to win the game. 
 ***
 
 Technologies
@@ -17,6 +19,10 @@ Technologies
 - CSS
 
 ***
+
+Game URL
+
+(https://waggish-snakes.surge.sh/)
 
 _Screenshots_
 
@@ -35,7 +41,7 @@ Game Page
  Future Updates
 
  - [ ] Leaderboard
- 
+
 
 _Credits_
 

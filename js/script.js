@@ -4,11 +4,11 @@ const cards = document.querySelectorAll('.game-cards');
 
 /*----- state variables -----*/
 let hasFlippedCard = false;
-let lockBoard = false; //variable to 
+let lockBoard = false; 
 let firstCard;
 let secondCard;
 let flips = 0;
-let timer; // New variable for the timer
+let timer; 
 let elapsedSeconds = 0;
 let gameStart = false;
 
@@ -23,14 +23,13 @@ cards.forEach(card => card.addEventListener('click', playFlipSound));
 
 document.addEventListener('DOMContentLoaded', function () {
     const audio = document.getElementById('backgroundSound');
-    audio.volume = 0.3; // Set the volume to 50%
+    audio.volume = 0.3;
     audio.play();
 });
 
 /*----- functions -----*/
 
-// Update the timer display, using the ID "timer", if timerDisplay is truthy (exist on  the page) execute the code block. 
-//In the code block there is template literal to add an "s" to the numeric value of the time
+// Update the timer display, using the ID "timer".
 function updateTimerDisplay() {
     const timerDisplay = document.getElementById('timer');
     if (timerDisplay) {
@@ -56,11 +55,11 @@ function stopTimer() {
 //function to flip two cards
 function flipCard() {
     if (lockBoard) return; // checks if the board is locked and more cards cannot be flipped
-    if (this === firstCard)  // checks if the clicked card is the same as the firstCard that was just flipped, if yes ignore click
+    if (this === firstCard)  
         return;
     if(!gameStart){
         startTimer()
-        gameStart = true; // starts the timer once the game has started
+        gameStart = true; 
     }
     this.classList.add('flip'); //calls the css to visually flip the card
 
@@ -117,7 +116,7 @@ function resetBoard() {
     [firstCard, secondCard] = [null, null];
 }
 
-//updates the flips counter on the game pagw
+//updates the flips counter on the game page
 function updateFlipsDisplay() {
     const flipsDisplay = document.getElementById('flips');
     if (flipsDisplay) {
